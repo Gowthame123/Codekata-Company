@@ -1,0 +1,20 @@
+Given a string S ,print the vowels first and then consonants in the same order as they have occurred in the string.
+Input Size : N <= 10000
+Sample Testcase :
+INPUT
+GuVI
+OUTPUT
+uIGV
+
+CODE:
+
+n = str(input())
+vowels = set('aeiouAEIOU')
+final = ''
+sec = ''
+for i in n:
+    if i in vowels:
+        final += i
+    else:sec += i    
+print(final + sec)    
+ 
